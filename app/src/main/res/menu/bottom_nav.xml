@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/to_do"
+        android:id="@+id/todo"
+        android:icon="@drawable/ic_baseline_checklist_24"
+        />
+    <item android:title="@string/badge"
+          android:id="@+id/badge"
+          android:icon="@drawable/badge_svgrepo_com"/>
+    <item android:title="@string/calender"
+          android:id="@+id/calender"
+          android:icon="@drawable/ic_baseline_calendar_month_24"/>
+
+</menu>

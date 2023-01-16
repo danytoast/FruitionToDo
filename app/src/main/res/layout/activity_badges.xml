@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/badges_page_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/badges"
+            android:textAlignment="center"
+            android:textColor="@color/blue_berries"
+            android:textSize="26sp"
+
+
+            />
+
+    </LinearLayout>
+    <!--
+    <Button
+        android:id="@+id/help_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/add_button"
+        android:backgroundTint="@color/background_dark"
+        app:icon="@drawable/ic_baseline_help_24"
+        app:iconSize="35dp"
+        app:iconTint=
+ />
+-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="35pt"
+        android:backgroundTint="@color/blue_berries"
+
+
+ />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="476dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/topview"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="63dp"
+        android:outlineAmbientShadowColor="@color/white"
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/badge3"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:clickable="true"
+
+                        android:text="@string/tasks_3"
+                        app:icon="@drawable/ic_baseline_brightness_low_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/badge4"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="7dp"
+                        android:clickable="true"
+                        android:text="@string/tasks_5"
+
+                        app:icon="@drawable/ic_baseline_insert_emoticon_24" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/badge1"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:clickable="true"
+                        android:text="@string/nigh_owl"
+                        app:icon="@drawable/ic_baseline_brightness_3_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:clickable="false"
+
+                        android:id="@+id/badge2"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="7dp"
+                        android:text="@string/morning_person"
+                        app:icon="@drawable/ic_baseline_wb_sunny_24" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/badge5"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="streak"
+                        app:icon="@drawable/ic_baseline_timeline_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/badge6"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="7dp"
+                        android:text="Fast"
+                        app:icon="@drawable/ic_baseline_timer_24" />
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/blue_berries"
+        app:menu="@menu/bottom_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

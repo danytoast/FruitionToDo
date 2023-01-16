@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Fruition :to-do</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dd_mon_yyyy">dd/MON/yyyy</string>
+    <string name="todo_list_fragment">todo list fragment</string>
+    <string name="badges">Badges</string>
+    <string name="badge3">badge3</string>
+    <string name="badge4">badge4</string>
+    <string name="badge1">badge1</string>
+    <string name="badge2">badge2</string>
+    <string name="badge5">badge5</string>
+    <string name="badge6">badge6</string>
+    <string name="badge7">badge7</string>
+    <string name="badge8">badge8</string>
+    <string name="settings">Settings</string>
+    <string name="calender">Calender</string>
+    <string name="badge">Badge</string>
+    <string name="to_do">To Do</string>
+    <!--badges and achievements -->
+    <string name="tasks_3">3 Tasks</string>
+    <string name="tasks_3_description">finish three tasks in one day!</string>
+    <string name="tasks_5">5 Tasks</string>
+    <string name="tasks_5_description">finish five tasks in one day!</string>
+    <string name="nigh_owl">nigh owl</string>
+    <string name="night_owl_description">finish 10 tasks after 10pm!</string>
+    <string name="morning_person">morning</string>
+    <string name="morning_person_description">finish 10 tasks before 10am</string>
+    <string name="two_days_streak">2 days streak</string>
+    <string name="two_days_streak_description">keep a streak for two days</string>
+    <string name="seven_days_streak">7 days steak</string>
+    <string name="seven_days_streak_description">keep the streak for a week !!</string>
+    <!--apples     level is level 1 -->
+    <!--citruses   level is level 4 -->
+    <!--bananas    level is level 3 -->
+    <!--watermelon level is level 5 -->
+    <!--peaches    level is level 2 -->
+
+
+    <!--for notifications -->
+    <string name="tasks_3_notification">Yayyy,Good job you just finished three tasks in one day!</string>
+    <string name="tasks_5_notification">HELOO??, you are on fire??keep it up</string>
+    <string name="users_message">users message</string>
+    <string name="id_of_the_task_to_edit">id of the task to edit</string>
+
+
+</resources>

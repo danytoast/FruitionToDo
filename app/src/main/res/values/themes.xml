@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ButtomNavigationBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_berries</item>
+        <item name="colorPrimaryVariant">@color/light_purpule</item>
+        <item name="colorOnPrimary">@color/water_melon</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/sky_melon</item>
+        <item name="colorSecondaryVariant">@color/light_sky_melon</item>
+        <item name="colorOnSecondary">@color/earth_melon</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

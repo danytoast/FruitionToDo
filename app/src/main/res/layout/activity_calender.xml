@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalenderActivity"
+    >
+
+
+    <RelativeLayout
+
+        android:id="@+id/floatingthingyes"
+        android:layout_width="389dp"
+        android:layout_height="217dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flaotingcationmenues">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+            <EditText
+                android:id="@+id/idfromuser"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/water_melon"
+                android:contentDescription="@string/app_name"
+                android:hint="@string/id_of_the_task_to_edit"
+                android:padding="4dp"
+                android:textColor="@color/earth_melon"
+                android:textColorHint="@color/earth_melon"
+                android:visibility="gone"
+                app:tint="@color/earth_melon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/root_contaner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/water_melon"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:visibility="gone"
+                app:tint="@color/earth_melon" />
+
+            <Space
+                android:id="@+id/firstnull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/idFABAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp"
+                android:background="@color/text_powder_pink"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_baseline_menu_24"
+                app:backgroundTint="@color/earth_melon"
+                app:tint="@color/water_melon"
+                />
+
+            <Space
+                android:id="@+id/secondnull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_margin="7dp"
+                android:backgroundTint="@color/earth_melon"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_autorenew_24"
+                android:visibility="gone"
+                app:tint="@color/water_melon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/flaotingcationmenues"
+        android:layout_width="390dp"
+        android:layout_height="445dp"
+        android:layout_margin="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/white"
+        android:fadingEdge="horizontal|vertical"
+        android:isScrollContainer="true"
+        app:circularflow_radiusInDP="20dp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toTopOf="@+id/floatingthingyes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="7dp">
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingthingyes"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav"
+        android:backgroundTint="@color/earth_melon">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
